@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Zoom Slider</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>couleur <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+			<h1>pantone</h1>
+			<!-- <nav>
+				<a href="http://tympanus.net/Blueprints/FilterableProductGrid/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+				<!-a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+				<!--a href="http://tympanus.net/codrops/?p=24330" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+				<!a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+			</nav> -->
+		</header>  
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="iimages/pun.png" alt="Pantone Blue Iris" />
+						<div class="preview">
+							<img src="iimages/pun.png" alt="Pantone Blue Iris" />
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Qualités mystiques et spirituelles pour ce bleu-violet élu par le nuancier couleur de l’année 2008.</span>Blue Iris</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="iimages/pdeux.png" alt="Pantone Honeysuckle" />
+						<div class="preview">
+							<img src="iimages/pdeux.png" alt="Pantone Honeysuckle" />
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Pantone définit cette couleur comme celle de l’audace et du courage pour affronter les problèmes du quotidien.
+
+</span>Honeysuckle</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="iimages/pquatre.png" alt="Turquoise" />
+						<div class="preview">
+							<img src="iimages/pquatre.png" alt="Turquoise"/>
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Le Turquoise combine les qualités sereines du bleu et l’aspect vivifiant du vert. Une couleur qui invite à l’évasion dans les eaux tropicales annonce le nuancier.</span> Turquoise</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="iimages/pcinq.png" alt="Mimosa" />
+						<div class="preview">
+							<img src="iimages/pcinq.png" alt="Mimosa" />
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>En 2009,  la couleur jaune, chaleureuse et solaire avait été choisie pour exprimer l’optimisme et l’espoir dans une année d’incertitude économique et politique.</span>Mimosa</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="iimages/ptrois.png" alt="Chili Pepper" />
+						<div class="preview rounded">
+							<img src="iimages/ptrois.png" alt="Chili Pepper" />
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Avec ce rouge piment, Pantone a voulu célébrer l’esprit d’aventure et l’expression de l’individualité.</span>Chili Pepper</h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><span class="icon-cool2"></span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="iimages/pun.png" alt="Blue Iris" />
+				<div class="content__item-inner">
+					<h2>Blue Iris</h2>
+					<h3>Qualités mystiques et spirituelles pour ce bleu-violet élu par le nuancier couleur de l’année 2008.</h3>
+					<p>À l’heure des temps, Blue Iris réunit l’aspect fiable du bleu, souligné par un puissant casting violet. Émotionnellement, il est ancré et méditatif avec une touche de magie. Recherchez-la astucieusement combinée avec des prunes plus profondes, des marrons rouges, des jaunes verts, des raisins et des gris.</p>
+					<p><a href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2008">Learn more about Blue Iris &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="iimages/pdeux.png" alt="Honeysuckle" />
+				<div class="content__item-inner">
+					<h2>Honeysuckle</h2>
+					<h3>Pantone définit cette couleur comme celle de l’audace et du courage pour affronter les problèmes du quotidien.</h3>
+					<p>En période de stress, nous avons besoin de quelque chose pour nous remonter le moral. Honeysuckle est une couleur captivante et stimulante qui fait monter l'adrénaline - parfaite pour conjurer le blues. Honeysuckle tire ses qualités positives d’un puissant lien avec sa couleur mère rouge, la teinte la plus physique et la plus viscérale du spectre.</p>
+					<p><a href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2011">Learn more about Honeysuckle &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="iimages/pquatre.png" alt="Turquoise" />
+				<div class="content__item-inner">
+					<h2>Turquoise</h2>
+					<h3>Le Turquoise combine les qualités sereines du bleu et l’aspect vivifiant du vert. Une couleur qui invite à l’évasion dans les eaux tropicales annonce le nuancier.</h3>
+					<p>À l'origine, le pigment turquoise aurait été obtenu par broyage de la pierre de turquoise.
+						On a obtenu des nuances de turquoise par des pigments minéraux dès l'Antiquité, ainsi le mélange d'émail blanc avec de l'argent brûlé avec du soufre donne « un bel azuré Turquin » avec lequel, en ajoutant « quelque peu de cuivre brûlé », on obtient le bleu des turquoises.</p>
+					<p><a href="https://fr.wikipedia.org/wiki/Turquoise_(couleur)">Learn more about the turquoise &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="iimages/pcinq.png" alt="Mimosa" />
+				<div class="content__item-inner">
+					<h2>Mimosa</h2>
+					<h3>En 2009,  la couleur jaune, chaleureuse et solaire avait été choisie pour exprimer l’optimisme et l’espoir dans une année d’incertitude économique et politique.</h3>
+					<p>Le jaune mimosa est une couleur de la mode en 1891 : « le jaune se porte beaucoup, surtout en doublure ; le jaune mimosa, citron, cœur de lys, mandarine, font des oppositions charmantes au bleu pâle, aux nuances mauve et héliotrope ». C'est, à cette époque, une couleur nouvelle, obtenue pour la première fois en teinture avec un colorant azoïque qui vient d'être développé.</p>
+					<p><a href="https://fr.wikipedia.org/wiki/Jaune_mimosa">Learn more about Mimosa &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="iimages/ptrois.png" alt="Chili Pepper" />
+				<div class="content__item-inner">
+					<h2>Chili Pepper</h2>
+					<h3>Avec ce rouge piment, Pantone a voulu célébrer l’esprit d’aventure et l’expression de l’individualité.</h3>
+					<p>Une couleur rouge profonde et épicée, cette teinte attrayante donne une note élevée à la mode et à l'expression personnelle par son audace et sa sophistication. Chili Pepper dégage une attitude ouverte, confiante et axée sur le design. Le Chili Pepper 19-1557 est l’une des 3 000 couleurs disponibles dans la gamme Pantone’s Fashion, Home + Interiors de peintures intérieures et extérieures et de couleurs textiles.</p>
+					<p><a href="http://www.nationalcoloursupplies.com/index.php?route=blog/blog/view&blog_id=44">Learn more about Chili Pepper &xrarr;</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
